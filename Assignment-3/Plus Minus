@@ -1,0 +1,46 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+ 
+ int main()
+ {
+  int n;
+  cin>>n;
+  double arr[n];
+  for(int i=0;i<n;i++)
+  {
+      cin>>arr[i];
+      
+      
+  }
+  double  a=0;
+   double b=0;
+  double c=0;
+    double x,y,z;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>0)
+        {
+            a++;
+        }
+        
+        else if(arr[i]<0)
+        {
+            b++;
+        }
+       
+        else
+        {
+            c++;
+        }
+       
+    }
+        x=a/n;
+        y=b/n;
+        z=c/n;
+        cout<<fixed<<setprecision(6)<<x<<"\n";
+        cout<<fixed<<setprecision(6)<<y<<"\n";
+        cout<<fixed<<setprecision(6)<<z<<"\n";
+
+return 0;
+}
