@@ -1,0 +1,22 @@
+#include <cstdio>
+#include <iostream>
+
+
+using namespace std;
+
+
+int main(){
+    int h, m, s;
+    char c1, c2;
+    scanf("%d:%d:%d%c%c", &h, &m, &s, &c1, &c2);
+    if(h==12){
+        h=h-12;
+    }
+
+    if (c1 == 'P'){
+        h = h + 12;
+    }
+    printf("%02d:%02d:%02d\n", h,m,s);
+
+
+}
