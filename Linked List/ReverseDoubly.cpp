@@ -67,7 +67,7 @@ DoublyLinkedListNode* reverse(DoublyLinkedListNode* llist) {
     DoublyLinkedListNode *ptr1  = llist;
     DoublyLinkedListNode *ptr2 = ptr1->next;
     
-    ptr1->next = NULL;
+    ptr1->next = ptr1->prev;
     ptr1->prev = ptr2;
     
     while(ptr2!=NULL)
@@ -75,7 +75,7 @@ DoublyLinkedListNode* reverse(DoublyLinkedListNode* llist) {
         ptr2->prev = ptr2->next;
         ptr2->next = ptr1;
         ptr1 = ptr2;
-        ptr2 = ptr2->next;
+        ptr2 = ptr2->prev;
     }
 llist = ptr1;
 return llist;
