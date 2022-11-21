@@ -18,7 +18,7 @@ class Stack{
 		s=0; 
 	}
 	
-	//push the value at the back
+	//push the value at the bottom
 	void push(int val){
 	    s++;
 	    Node *temp = new Node();
